@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Aml &amp; Esam — Wedding</title>
+  <meta name="description" content="Aml &amp; Esam — Friday, December 11th, 2026 · 8:00 PM · قاعة النور، مدينة نصر">
+  <meta name="theme-color" content="#f7f1e6">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aml &amp; Esam — Wedding">
+  <meta property="og:description" content="Friday, December 11th, 2026 · 8:00 PM · Al Noor Hall, Nasr City, Cairo">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50' y='68' font-size='64' text-anchor='middle' fill='%23b8924a' font-family='serif'%3E%E2%99%A5%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+  <!-- ===== Envelope intro ===== -->
+  <div id="intro" aria-label="Wedding invitation envelope">
+    <div class="intro-stage">
+      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="اضغط لفتح الظرف · Tap to open">
+        <div class="env-back"></div>
+        <div class="env-card">
+          <div class="env-card-inner">
+            <span class="mini-names" dir="ltr">Aml &amp; Esam</span>
+            <span class="mini-date" dir="ltr">11 . 12 . 2026</span>
+          </div>
+        </div>
+        <div class="env-pocket"></div>
+        <div class="env-flap"></div>
+        <div class="env-seal" aria-hidden="true"><span>A&amp;E</span></div>
+      </div>
+      <p class="tap-hint"><span class="ar">اضغط لفتح الظرف</span><i>·</i><span class="en">TAP TO OPEN</span></p>
+    </div>
+  </div>
+
+  <!-- ===== Music button (starts on envelope tap; button toggles) ===== -->
+  <button id="musicBtn" class="music-btn" type="button" aria-label="تشغيل الموسيقى · Play music" aria-pressed="false">
+    <svg class="ico-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h4l5 4V6L7 10H3z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <svg class="ico-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h4l5 4V6L7 10H3z"/><path d="M16 9l5 6M21 9l-5 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="music-label"><span class="lbl-off">تشغيل الموسيقى</span><span class="lbl-on">إيقاف الموسيقى</span></span>
+  </button>
+
+  <audio id="bgm" loop preload="none">
+    <source src="audio/wedding-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ===== Invitation ===== -->
+  <main id="invite" aria-hidden="true">
+
+    <section class="sec hero">
+      <p class="eyebrow reveal" style="--d:.1s">The Wedding Ceremony</p>
+      <h1 class="names reveal" style="--d:.3s" dir="ltr">Aml <span class="amp">&amp;</span> Esam</h1>
+      <div class="ornament reveal" style="--d:.5s" aria-hidden="true"><span></span><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.1C.9 8.5 3 5 6.4 5c2 0 3.5 1.1 4.3 2.6h2.6C14.1 6.1 15.6 5 17.6 5 21 5 23.1 8.5 21.6 11.9 19.5 16.4 12 21 12 21z"/></svg><span></span></div>
+      <div class="scroll-cue reveal" style="--d:.8s" aria-hidden="true"></div>
+    </section>
+
+    <section class="sec verse-sec">
+      <p class="verse reveal" lang="ar">﴿وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنْفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً﴾</p>
+      <p class="verse-ref reveal" style="--d:.2s">سورة الروم · الآية ٢١</p>
+    </section>
+
+    <section class="sec invite-sec">
+      <p class="ar-text reveal">في ليلة يتكللها الفرح والسرور، نتشرف بدعوتكم لحضور حفل زفافنا، وبحضوركم يتم لنا الفرح والسرور.</p>
+      <div class="ornament small reveal" style="--d:.15s" aria-hidden="true"><span></span><i></i><span></span></div>
+      <p class="en-text reveal" style="--d:.25s" dir="ltr" lang="en">Together with our families, we joyfully invite you to celebrate our wedding day.</p>
+    </section>
+
+    <section class="sec date-sec">
+      <p class="label reveal"><span class="en" dir="ltr">Date</span><i>·</i><span class="ar">التاريخ</span></p>
+      <p class="big-ar reveal" style="--d:.1s">الجمعة ١١ ديسمبر ٢٠٢٦</p>
+      <p class="big-en reveal" style="--d:.2s" dir="ltr">Friday, December 11th, 2026</p>
+
+      <div class="countdown reveal" style="--d:.3s" id="countdown" dir="ltr" aria-live="off">
+        <div class="cd"><b id="cdDays">--</b><span>DAYS</span></div>
+        <div class="cd"><b id="cdHours">--</b><span>HRS</span></div>
+        <div class="cd"><b id="cdMins">--</b><span>MIN</span></div>
+        <div class="cd"><b id="cdSecs">--</b><span>SEC</span></div>
+      </div>
+      <p class="cd-done" id="cdDone" hidden>الليلة فرحنا · Today is the day</p>
+    </section>
+
+    <section class="sec time-sec">
+      <p class="label reveal"><span class="en" dir="ltr">Time</span><i>·</i><span class="ar">الموعد</span></p>
+      <p class="big-ar reveal" style="--d:.1s">٨:٠٠ مساءً</p>
+      <p class="big-en reveal" style="--d:.2s" dir="ltr">8:00 PM</p>
+    </section>
+
+    <section class="sec venue-sec">
+      <p class="label reveal"><span class="en" dir="ltr">Venue</span><i>·</i><span class="ar">مكان الحفل</span></p>
+      <p class="venue-ar reveal" style="--d:.1s">قاعة النور – دار مناسبات مسجد آل رشدان</p>
+      <p class="venue-en reveal" style="--d:.2s" dir="ltr">Al Noor Hall – Al Rashdan Mosque Banquet Hall</p>
+      <p class="venue-sub reveal" style="--d:.3s">امتداد شارع رمسيس · مدينة نصر · القاهرة<br><span dir="ltr">Ramses Extension St. · Nasr City · Cairo, Egypt</span></p>
+      <a class="btn reveal" style="--d:.4s" href="https://maps.app.goo.gl/8mPkeXXN6NWE64b3A" target="_blank" rel="noopener noreferrer"><span class="ar">افتح الموقع</span><i>·</i><span class="en" dir="ltr">OPEN LOCATION</span></a>
+    </section>
+
+    <footer class="sec closing">
+      <div class="ornament reveal" aria-hidden="true"><span></span><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.1C.9 8.5 3 5 6.4 5c2 0 3.5 1.1 4.3 2.6h2.6C14.1 6.1 15.6 5 17.6 5 21 5 23.1 8.5 21.6 11.9 19.5 16.4 12 21 12 21z"/></svg><span></span></div>
+      <p class="names small reveal" style="--d:.15s" dir="ltr">Aml <span class="amp">&amp;</span> Esam</p>
+      <p class="end-date reveal" style="--d:.3s" dir="ltr">11 . 12 . 2026</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
